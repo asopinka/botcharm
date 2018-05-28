@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 
 # Build settings
-theme: jekyll-theme-modernist
+theme: jekyll-theme-cayman
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
