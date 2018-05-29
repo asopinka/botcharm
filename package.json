@@ -1,0 +1,17 @@
+{
+  "name": "botcharm",
+  "version": "1.0.0",
+  "description": "A simple personality framework for your chatbot.",
+  "keywords": "bot,personality,charm,voice,chatbot",
+  "homepage": "https://asopinka.github.io/botcharm",
+  "license": "MIT",
+  "author": {
+    "name": "Alex Sopinka",
+    "email": "alex@sopinka.com",
+    "url": "https://sopinka.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asopinka/botcharm.git"
+  }
+}
