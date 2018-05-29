@@ -4,6 +4,7 @@ theme: jekyll-theme-cayman
 theme_color: "#379F7A"
 show_downloads: "false"
 google_analytics: ""
+root_folder: "/botcharm"
 bots:
   - name: "Obie.ai"
     link: "https://obie.ai"
