@@ -159,7 +159,7 @@ class BotCharm {
 	}
 
 	override(msg_type, items, overrideTone) {
-		if (typeof(items) !== 'Array') {
+		if (!Array.isArray(items)) {
 			throw new Error('Items added to dictionary must be passed as an array.');
 		}
 
