@@ -1,0 +1,14 @@
+{
+    "name": "BotCharm",
+    "short_name": "BotCharm",
+    "icons": [
+        {
+            "src": "/assets/img/favicon/android-chrome-144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#379f7a",
+    "background_color": "#379f7a",
+    "display": "standalone"
+}
