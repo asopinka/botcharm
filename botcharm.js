@@ -64,12 +64,28 @@ class BotCharm {
 				'Hmmm...'
 			],
 			formal_positive_emoji: [
+				':thumbs_up:',
+				':smile:',
+				':slightly_smiling_face:',
+				':grinning:'
 			],
 			casual_positive_emoji: [
+				':metal:',
+				':joy:',
+				':heart_eyes:',
+				':sunglasses:'
 			],
 			formal_negative_emoji: [
+				':cry:',
+				':disappointed:',
+				':slightly_frowning_face:',
+				':thumbs_down:'
 			],
 			casual_negative_emoji: [
+				':imp:',
+				':grimacing:',
+				':broken_heart:',
+				':unamused:'
 			],
 			formal_weather: [
 				'It may be sunny out.',
@@ -109,8 +125,20 @@ class BotCharm {
 				'I still love you!'
 			],
 			formal_mention: [
+				'I heard someone call me.',
+				'I heard someone call my name.',
+				'How can I help today?',
+				'How can I be of assistance?',
+				'I am here and ready to help.'
 			],
 			casual_mention: [
+				'I\'m all ears!',
+				'Someone call me?',
+				'You rang?',
+				'Yes?',
+				'I\'m here, let\'s get this party started!',
+				'I heard my name!',
+				'That\'s my name, don\'t wear it out!'
 			],
 			formal_help: [
 				'Here is how I can help you:',
