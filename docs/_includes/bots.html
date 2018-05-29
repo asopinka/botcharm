@@ -1,0 +1,11 @@
+<section id="bots-using-botcharm">
+	<h2>Bots Using BotCharm</h2>
+	{% for bot in site.bots %}
+		<div class="bot">
+			<a href="{{bot.link}}" target="_blank">
+				<img src="{{bot.icon}}" alt="{{bot.name}}" />
+				<span>{{bot.name}}</span>
+			</a>
+		</div>
+	{% endfor %}
+</section>

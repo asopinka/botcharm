@@ -1,37 +1,84 @@
-## Welcome to GitHub Pages
+## Why Does This Matter?
 
-You can use the [editor on GitHub](https://github.com/asopinka/botcharm/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+The voice of your chatbot is arguably one of the *most* important design aspects when you start to build your artificial assistant.  It sets the tone for the conversations your users will have when they interact with your bot.  Failing to put the time and effort into your bot's identity will affect your brand, so make sure you give it considerable thought. Feel free to use this tool as a starting point and then shape your bot's voice to make it unique.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Install and Initialize
 
-### Markdown
+To install BotCharm, simply add the package to your project:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+npm install --save botcharm
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Once the package is added, you can initialize the framework like so:
 
-### Jekyll Themes
+```
+const voice = require('botcharm')({ tone: either 'casual' or 'formal' })
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/asopinka/botcharm/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Set the tone of your bot to cater towards your audience. A casual tone contains phrases like *"What's up?"*, whereas a formal tone would contain *"How are you?"*.
 
-### Support or Contact
+Don't worry, this can be changed on-demand.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Usage
+
+Now, whenever your bot is going to speak, you can simply call BotCharm for a random phrase:
+
+```
+voice.get('<phrase_type>')
+```
+
+The following phrase types have pre-built responses in BotCharm:
+
+| `hello` | Responses to a greeting	|
+|---------|-------------------------|
+| `bye`	  | Responses to a farewell	|
+|---------|-------------------------|
+| `mention` | Responses to when your bot is mentioned in a conversation |
+|---------|-------------------------|
+| `how_are_you` | Responses to a "how are you" message |
+|---------|-------------------------|
+| `thanks` | Responses to a message of thanks |
+|---------|-------------------------|
+| `help` | Pre-amble for a help message |
+|---------|-------------------------|
+| `error` | Responses for when an error occurs |
+|---------|-------------------------|
+| `love` | Responses to loving messages |
+|---------|-------------------------|
+| `hate` | Responses to hateful messages |
+|---------|-------------------------|
+| `curse` | Responses to messages with curse words |
+|---------|-------------------------|
+| `positive_emoji` | A random positive emoji |
+|---------|-------------------------|
+| `negative_emoji` | A random negative emoji |
+|---------|-------------------------|
+| `weather` | Responses to messages about weather |
+
+
+## Advanced Usage
+
+### Overriding Tone
+
+If you'd like to override the tone you set on initialization, you can do that when grabbing a phrase:
+
+```
+voice.get('<phrase_type>', pass either 'casual' or 'formal' here)
+```
+
+### Custom Dictionary
+
+As your bot grows (or possibly as soon as you install BotCharm), you'll probably want to create custom phrase types and responses. Doing that is simple!
+
+```
+voice.override('<custom_phrase_type>', ['custom', 'array', 'of', 'strings/responses'])
+```
+
+Then you can use it like any other phrase type:
+
+```
+voice.get('<custom_phrase_type>')
+```
+
+You can also pass in the tone as the last parameter to `voice.override` to add the phrase type dictionary to 'casual' or 'formal' regardless of what you initially set.

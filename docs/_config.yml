@@ -1,1 +1,10 @@
+title: "BotCharm"
+description: "A simple personality framework for your chatbot."
 theme: jekyll-theme-cayman
+theme_color: "#379F7A"
+show_downloads: "false"
+google_analytics: ""
+bots:
+  - name: "Obie.ai"
+    link: "https://obie.ai"
+    icon: "https://obie.ai/img/obie-dyecut.png"

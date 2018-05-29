@@ -1,0 +1,89 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+$color: #379F7A;
+$grey: #606C71;
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+		color: $color;
+	}
+}
+
+.page-header {
+	background: $color;
+}
+
+.main-content {
+	h1, h2, h3, h4, h5, h6 {
+		color: $color;
+	}
+
+	:first-child:not {
+		margin-top: 0;
+	}
+
+	table {
+		th {
+			font-weight: 400;
+			text-align: left;
+		}
+
+		th, td {
+			border: none;
+		}
+	}
+}
+
+#why-does-this-matter {
+	margin-top: 2rem;
+}
+
+#bots-using-botcharm {
+	h3 {
+		margin-top: 2rem;
+	}
+}
+
+.bot {
+	margin: 1em;
+	display: inline-block;
+	border: 1px solid $color;
+	border-radius: 4px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+
+	a {
+		text-decoration: none;
+		color: $grey;
+		padding-bottom: 1em;
+		display: block;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	img {
+		max-height: 150px;
+		max-width: 150px;
+		display: block;
+		margin: 0 auto;
+		padding: 1em;
+	}
+
+	span {
+		display: block;
+		text-align: center;
+	}
+}
+
+.site-footer {
+	font-size: 12px;
+}
